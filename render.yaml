@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: AmazonChecker
+    env: python
+    plan: free
+    region: oregon
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn -w 4 -b 0.0.0.0:5000 app:app"
+    envVars:
+      - key: CHROMEDRIVER_PATH
+        value: "/usr/local/bin/chromedriver"
+      - key: PORT
+        value: "5000"

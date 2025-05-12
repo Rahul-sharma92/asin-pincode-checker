@@ -1,0 +1,6 @@
+Flask
+pandas
+selenium
+openpyxl
+concurrent.futures
+gunicorn
