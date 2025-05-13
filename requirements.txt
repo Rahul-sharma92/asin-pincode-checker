@@ -3,4 +3,3 @@ pandas
 selenium
 openpyxl
 gunicorn
-
